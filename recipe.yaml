@@ -94,7 +94,7 @@ tasks:
     dest: ./resources/Kl_HudV2
 
   - action: replace_string
-    file: ./resources/[esx]/esx_status/client/main.lua
+    file: ./resources/[esx_addons]/esx_status/client/main.lua
     search: 'esx_status:onTick'
     replace: 'Kl_Hud:onTick'
 
