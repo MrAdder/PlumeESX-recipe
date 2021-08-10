@@ -50,7 +50,15 @@ tasks:
   - action: download_github
     src: https://github.com/esx-framework/esx-legacy
     ref: cae7d8e7fddf02658dcbe858d61b5eb8cfcffca8
-    dest: ./resources/
+    dest: ./tmp/esx_legacy
+    
+   - action: move_path
+    src: ./tmp/esx_legacy/[esx]
+    dest: ./resources/[esx]
+
+   - action: move_path
+    src: ./tmp/esx_legacy/[esx_addons]
+    dest: ./resources/[esx_addons]/
 
   - action: download_github
     src: https://github.com/HypeLevels/simpledrift
